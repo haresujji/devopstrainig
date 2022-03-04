@@ -1,0 +1,2 @@
+module MstVendorsHelper
+end

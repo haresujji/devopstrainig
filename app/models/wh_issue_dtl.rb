@@ -1,0 +1,2 @@
+class WhIssueDtl < ApplicationRecord
+end

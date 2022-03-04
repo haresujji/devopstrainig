@@ -1,0 +1,3 @@
+class WhStoDtl < ApplicationRecord
+
+end

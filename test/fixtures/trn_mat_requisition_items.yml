@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  req_no: MyString
+  mat_code: MyString
+  mat_desc: MyString
+  mat_uom: MyString
+  mat_qty: MyString
+
+two:
+  req_no: MyString
+  mat_code: MyString
+  mat_desc: MyString
+  mat_uom: MyString
+  mat_qty: MyString

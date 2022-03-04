@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document no:</strong>
+  <%= @wh_stock_transfer.document_no %>
+</p>
+
+<p>
+  <strong>Truck no:</strong>
+  <%= @wh_stock_transfer.truck_no %>
+</p>
+
+<p>
+  <strong>Po number:</strong>
+  <%= @wh_stock_transfer.po_number %>
+</p>
+
+<p>
+  <strong>Received qty:</strong>
+  <%= @wh_stock_transfer.received_qty %>
+</p>
+
+<p>
+  <strong>Mat code:</strong>
+  <%= @wh_stock_transfer.mat_code %>
+</p>
+
+<p>
+  <strong>Mat desc:</strong>
+  <%= @wh_stock_transfer.mat_desc %>
+</p>
+
+<p>
+  <strong>Gross weight:</strong>
+  <%= @wh_stock_transfer.gross_weight %>
+</p>
+
+<p>
+  <strong>Tare weight:</strong>
+  <%= @wh_stock_transfer.tare_weight %>
+</p>
+
+<p>
+  <strong>Net weight:</strong>
+  <%= @wh_stock_transfer.net_weight %>
+</p>
+
+<%= link_to 'Edit', edit_wh_stock_transfer_path(@wh_stock_transfer) %> |
+<%= link_to 'Back', wh_stock_transfers_path %>

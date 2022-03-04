@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wh Stock Transfers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Document no</th>
+      <th>Truck no</th>
+      <th>Po number</th>
+      <th>Received qty</th>
+      <th>Mat code</th>
+      <th>Mat desc</th>
+      <th>Gross weight</th>
+      <th>Tare weight</th>
+      <th>Net weight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wh_stock_transfers.each do |wh_stock_transfer| %>
+      <tr>
+        <td><%= wh_stock_transfer.document_no %></td>
+        <td><%= wh_stock_transfer.truck_no %></td>
+        <td><%= wh_stock_transfer.po_number %></td>
+        <td><%= wh_stock_transfer.received_qty %></td>
+        <td><%= wh_stock_transfer.mat_code %></td>
+        <td><%= wh_stock_transfer.mat_desc %></td>
+        <td><%= wh_stock_transfer.gross_weight %></td>
+        <td><%= wh_stock_transfer.tare_weight %></td>
+        <td><%= wh_stock_transfer.net_weight %></td>
+        <td><%= link_to 'Show', wh_stock_transfer %></td>
+        <td><%= link_to 'Edit', edit_wh_stock_transfer_path(wh_stock_transfer) %></td>
+        <td><%= link_to 'Destroy', wh_stock_transfer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wh Stock Transfer', new_wh_stock_transfer_path %>

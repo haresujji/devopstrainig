@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mst Vendors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vendor group code</th>
+      <th>Vendor code</th>
+      <th>Vendor title</th>
+      <th>Vendor firstname</th>
+      <th>Vendor lastname</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mst_vendors.each do |mst_vendor| %>
+      <tr>
+        <td><%= mst_vendor.vendor_group_code %></td>
+        <td><%= mst_vendor.vendor_code %></td>
+        <td><%= mst_vendor.vendor_title %></td>
+        <td><%= mst_vendor.vendor_firstname %></td>
+        <td><%= mst_vendor.vendor_lastname %></td>
+        <td><%= mst_vendor.status %></td>
+        <td><%= link_to 'Show', mst_vendor %></td>
+        <td><%= link_to 'Edit', edit_mst_vendor_path(mst_vendor) %></td>
+        <td><%= link_to 'Destroy', mst_vendor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mst Vendor', new_mst_vendor_path %>

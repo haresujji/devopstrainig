@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trn Mat Receipts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trn_mat_receipts.each do |trn_mat_receipt| %>
+      <tr>
+        <td><%= link_to 'Show', trn_mat_receipt %></td>
+        <td><%= link_to 'Edit', edit_trn_mat_receipt_path(trn_mat_receipt) %></td>
+        <td><%= link_to 'Destroy', trn_mat_receipt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trn Mat Receipt', new_trn_mat_receipt_path %>

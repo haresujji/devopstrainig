@@ -1,0 +1,1 @@
+json.partial! "trn_mat_requisition_items/trn_mat_requisition_item", trn_mat_requisition_item: @trn_mat_requisition_item

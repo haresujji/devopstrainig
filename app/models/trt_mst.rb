@@ -1,0 +1,2 @@
+class TrtMst < ApplicationRecord
+end

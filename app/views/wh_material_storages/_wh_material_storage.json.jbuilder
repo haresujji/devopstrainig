@@ -1,0 +1,2 @@
+json.extract! wh_material_storage, :id, :wh_material_storage_id, :ge_doc_no, :plant, :str_loc, :mat_group, :mat_code, :mat_desc, :mat_uom, :grn_no, :grn_qty, :grn_date, :vendor_batch, :mfg_date, :exp_date, :wh_loc_id, :wh_loc_rfid, :wh_loc_qty, :wh_picked_qty, :wh_balance_qty, :wh_hold_reason, :sup_roll_ref, :sap_batch, :sap_status, :stock_status, :status, :created_datetime, :modified_datetime, :created_at, :updated_at
+json.url wh_material_storage_url(wh_material_storage, format: :json)

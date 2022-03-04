@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wh Issue Dtls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wh_issue_dtls.each do |wh_issue_dtl| %>
+      <tr>
+        <td><%= link_to 'Show', wh_issue_dtl %></td>
+        <td><%= link_to 'Edit', edit_wh_issue_dtl_path(wh_issue_dtl) %></td>
+        <td><%= link_to 'Destroy', wh_issue_dtl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wh Issue Dtl', new_wh_issue_dtl_path %>

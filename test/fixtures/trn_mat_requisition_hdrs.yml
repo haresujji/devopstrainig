@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plant: MyString
+  str_loc: MyString
+  req_no: MyString
+  req_dt: 2019-10-18
+  req_shift: 1
+  vendor: one
+  user: one
+  action_status: MyString
+
+two:
+  plant: MyString
+  str_loc: MyString
+  req_no: MyString
+  req_dt: 2019-10-18
+  req_shift: 1
+  vendor: two
+  user: two
+  action_status: MyString

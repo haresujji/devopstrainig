@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trn Wh Request Dtl Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trn_wh_request_dtl_items.each do |trn_wh_request_dtl_item| %>
+      <tr>
+        <td><%= link_to 'Show', trn_wh_request_dtl_item %></td>
+        <td><%= link_to 'Edit', edit_trn_wh_request_dtl_item_path(trn_wh_request_dtl_item) %></td>
+        <td><%= link_to 'Destroy', trn_wh_request_dtl_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trn Wh Request Dtl Item', new_trn_wh_request_dtl_item_path %>

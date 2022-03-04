@@ -1,0 +1,2 @@
+class MstVendor < ApplicationRecord
+end

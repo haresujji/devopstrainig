@@ -1,0 +1,2 @@
+class WhStockTransfer < ApplicationRecord
+end

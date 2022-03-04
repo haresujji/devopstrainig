@@ -1,0 +1,2 @@
+class WhBundleType < ApplicationRecord
+end

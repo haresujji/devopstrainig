@@ -1,0 +1,2 @@
+class TrnWhRequestDtlItem < ApplicationRecord
+end

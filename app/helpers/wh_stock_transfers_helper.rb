@@ -1,0 +1,2 @@
+module WhStockTransfersHelper
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Req no:</strong>
+  <%= @trn_mat_requisition_item.req_no %>
+</p>
+
+<p>
+  <strong>Mat code:</strong>
+  <%= @trn_mat_requisition_item.mat_code %>
+</p>
+
+<p>
+  <strong>Mat desc:</strong>
+  <%= @trn_mat_requisition_item.mat_desc %>
+</p>
+
+<p>
+  <strong>Mat uom:</strong>
+  <%= @trn_mat_requisition_item.mat_uom %>
+</p>
+
+<p>
+  <strong>Mat qty:</strong>
+  <%= @trn_mat_requisition_item.mat_qty %>
+</p>
+
+<%= link_to 'Edit', edit_trn_mat_requisition_item_path(@trn_mat_requisition_item) %> |
+<%= link_to 'Back', trn_mat_requisition_items_path %>

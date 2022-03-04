@@ -1,0 +1,62 @@
+<%= form_with(model: wh_stock_transfer, local: true) do |form| %>
+  <% if wh_stock_transfer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wh_stock_transfer.errors.count, "error") %> prohibited this wh_stock_transfer from being saved:</h2>
+
+      <ul>
+        <% wh_stock_transfer.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :document_no %>
+    <%= form.text_field :document_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :truck_no %>
+    <%= form.text_field :truck_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :po_number %>
+    <%= form.text_field :po_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :received_qty %>
+    <%= form.text_field :received_qty %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_code %>
+    <%= form.text_field :mat_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_desc %>
+    <%= form.text_field :mat_desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gross_weight %>
+    <%= form.text_field :gross_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tare_weight %>
+    <%= form.text_field :tare_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :net_weight %>
+    <%= form.text_field :net_weight %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

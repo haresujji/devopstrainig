@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plant:</strong>
+  <%= @trn_mat_requisition_hdr.plant %>
+</p>
+
+<p>
+  <strong>Str loc:</strong>
+  <%= @trn_mat_requisition_hdr.str_loc %>
+</p>
+
+<p>
+  <strong>Req no:</strong>
+  <%= @trn_mat_requisition_hdr.req_no %>
+</p>
+
+<p>
+  <strong>Req dt:</strong>
+  <%= @trn_mat_requisition_hdr.req_dt %>
+</p>
+
+<p>
+  <strong>Req shift:</strong>
+  <%= @trn_mat_requisition_hdr.req_shift %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @trn_mat_requisition_hdr.vendor_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @trn_mat_requisition_hdr.user_id %>
+</p>
+
+<p>
+  <strong>Action status:</strong>
+  <%= @trn_mat_requisition_hdr.action_status %>
+</p>
+
+<%= link_to 'Edit', edit_trn_mat_requisition_hdr_path(@trn_mat_requisition_hdr) %> |
+<%= link_to 'Back', trn_mat_requisition_hdrs_path %>

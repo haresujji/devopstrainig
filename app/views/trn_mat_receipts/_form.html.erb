@@ -1,0 +1,17 @@
+<%= form_with(model: trn_mat_receipt, local: true) do |form| %>
+  <% if trn_mat_receipt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trn_mat_receipt.errors.count, "error") %> prohibited this trn_mat_receipt from being saved:</h2>
+
+      <ul>
+        <% trn_mat_receipt.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

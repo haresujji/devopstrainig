@@ -1,0 +1,2 @@
+class WhIssueHdr < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class WhMaterialStorage < ApplicationRecord
+end

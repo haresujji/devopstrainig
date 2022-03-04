@@ -1,0 +1,47 @@
+<%= form_with(model: mst_vendor, local: true) do |form| %>
+  <% if mst_vendor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mst_vendor.errors.count, "error") %> prohibited this mst_vendor from being saved:</h2>
+
+      <ul>
+        <% mst_vendor.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :vendor_group_code %>
+    <%= form.text_field :vendor_group_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_code %>
+    <%= form.text_field :vendor_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_title %>
+    <%= form.text_field :vendor_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_firstname %>
+    <%= form.text_field :vendor_firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_lastname %>
+    <%= form.text_field :vendor_lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

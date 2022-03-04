@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendor group code:</strong>
+  <%= @mst_vendor.vendor_group_code %>
+</p>
+
+<p>
+  <strong>Vendor code:</strong>
+  <%= @mst_vendor.vendor_code %>
+</p>
+
+<p>
+  <strong>Vendor title:</strong>
+  <%= @mst_vendor.vendor_title %>
+</p>
+
+<p>
+  <strong>Vendor firstname:</strong>
+  <%= @mst_vendor.vendor_firstname %>
+</p>
+
+<p>
+  <strong>Vendor lastname:</strong>
+  <%= @mst_vendor.vendor_lastname %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @mst_vendor.status %>
+</p>
+
+<%= link_to 'Edit', edit_mst_vendor_path(@mst_vendor) %> |
+<%= link_to 'Back', mst_vendors_path %>

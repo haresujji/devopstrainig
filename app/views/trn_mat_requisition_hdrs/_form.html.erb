@@ -1,0 +1,57 @@
+<%= form_with(model: trn_mat_requisition_hdr, local: true) do |form| %>
+  <% if trn_mat_requisition_hdr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trn_mat_requisition_hdr.errors.count, "error") %> prohibited this trn_mat_requisition_hdr from being saved:</h2>
+
+      <ul>
+        <% trn_mat_requisition_hdr.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :plant %>
+    <%= form.text_field :plant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :str_loc %>
+    <%= form.text_field :str_loc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_no %>
+    <%= form.text_field :req_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_dt %>
+    <%= form.date_select :req_dt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_shift %>
+    <%= form.number_field :req_shift %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_id %>
+    <%= form.text_field :vendor_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_status %>
+    <%= form.text_field :action_status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

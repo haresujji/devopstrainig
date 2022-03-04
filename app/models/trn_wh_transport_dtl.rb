@@ -1,0 +1,2 @@
+class TrnWhTransportDtl < ApplicationRecord
+end

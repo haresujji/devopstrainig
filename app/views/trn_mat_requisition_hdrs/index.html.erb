@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trn Mat Requisition Hdrs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant</th>
+      <th>Str loc</th>
+      <th>Req no</th>
+      <th>Req dt</th>
+      <th>Req shift</th>
+      <th>Vendor</th>
+      <th>User</th>
+      <th>Action status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trn_mat_requisition_hdrs.each do |trn_mat_requisition_hdr| %>
+      <tr>
+        <td><%= trn_mat_requisition_hdr.plant %></td>
+        <td><%= trn_mat_requisition_hdr.str_loc %></td>
+        <td><%= trn_mat_requisition_hdr.req_no %></td>
+        <td><%= trn_mat_requisition_hdr.req_dt %></td>
+        <td><%= trn_mat_requisition_hdr.req_shift %></td>
+        <td><%= trn_mat_requisition_hdr.vendor_id %></td>
+        <td><%= trn_mat_requisition_hdr.user_id %></td>
+        <td><%= trn_mat_requisition_hdr.action_status %></td>
+        <td><%= link_to 'Show', trn_mat_requisition_hdr %></td>
+        <td><%= link_to 'Edit', edit_trn_mat_requisition_hdr_path(trn_mat_requisition_hdr) %></td>
+        <td><%= link_to 'Destroy', trn_mat_requisition_hdr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trn Mat Requisition Hdr', new_trn_mat_requisition_hdr_path %>

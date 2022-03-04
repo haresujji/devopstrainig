@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  document_no: MyString
+  truck_no: MyString
+  po_number: MyString
+  received_qty: MyString
+  mat_code: MyString
+  mat_desc: MyString
+  gross_weight: MyString
+  tare_weight: MyString
+  net_weight: MyString
+
+two:
+  document_no: MyString
+  truck_no: MyString
+  po_number: MyString
+  received_qty: MyString
+  mat_code: MyString
+  mat_desc: MyString
+  gross_weight: MyString
+  tare_weight: MyString
+  net_weight: MyString

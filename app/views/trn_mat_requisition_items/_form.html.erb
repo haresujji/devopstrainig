@@ -1,0 +1,42 @@
+<%= form_with(model: trn_mat_requisition_item, local: true) do |form| %>
+  <% if trn_mat_requisition_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trn_mat_requisition_item.errors.count, "error") %> prohibited this trn_mat_requisition_item from being saved:</h2>
+
+      <ul>
+        <% trn_mat_requisition_item.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :req_no %>
+    <%= form.text_field :req_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_code %>
+    <%= form.text_field :mat_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_desc %>
+    <%= form.text_field :mat_desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_uom %>
+    <%= form.text_field :mat_uom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mat_qty %>
+    <%= form.text_field :mat_qty %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
